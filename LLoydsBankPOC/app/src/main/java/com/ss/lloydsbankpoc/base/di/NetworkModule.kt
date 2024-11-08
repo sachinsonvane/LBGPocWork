@@ -1,7 +1,7 @@
 package com.ss.lloydsbankpoc.base.di
 
-import com.ss.lloydsbankpoc.base.constants.AppConstants
-import com.ss.lloydsbankpoc.base.constants.AppConstants.BUIL_CONFIG_DEBUG
+import com.sns.core.constants.AppConstants
+import com.sns.core.constants.AppConstants.BUIL_CONFIG_DEBUG
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

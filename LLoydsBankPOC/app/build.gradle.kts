@@ -54,6 +54,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core"))
 
     implementation("androidx.core:core-ktx:1.13.1")
   //  implementation("androidx.core:core-ktx:1.15.0")
@@ -73,6 +74,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2") // Kotlin extensions for LiveData with Lifecycle.
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") // ViewModel utilities for Compose.
     implementation("com.google.dagger:hilt-android:2.48.1")
+
 
     kapt("com.google.dagger:hilt-android-compiler:2.48.1") // Annotation processor for Dagger Hilt.
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0") // Hilt extension for Navigation in Compose.
