@@ -11,7 +11,7 @@ import javax.inject.Inject
 open class GetAllBooksUseCases @Inject constructor(private val booksRepo: BooksRepo) :
     UseCaseNoParams<List<BooksEntity>> {
     override suspend fun invoke(): Flow<Either<Failure, List<BooksEntity>>> {
-        return booksRepo.getAllPosts()
+        return booksRepo.getAllBooks()
     }
 
 }

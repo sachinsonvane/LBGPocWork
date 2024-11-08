@@ -8,13 +8,7 @@
       <entry key="GetSpellsFromServerTest">
         <State />
       </entry>
-      <entry key="GetWeasleysFromServerTest">
-        <State />
-      </entry>
       <entry key="MainActivityTest">
-        <State />
-      </entry>
-      <entry key="MyComposeEventsText">
         <State />
       </entry>
       <entry key="app">
@@ -32,6 +26,9 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-05-29T12:25:54.723398300Z" />
         </State>
+      </entry>
+      <entry key="core">
+        <State />
       </entry>
     </value>
   </component>

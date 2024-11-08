@@ -74,7 +74,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2") // AndroidX ViewModel library with Kotlin extensions.
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2") // Kotlin extensions for LiveData with Lifecycle.
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") // ViewModel utilities for Compose.
-    implementation("com.google.dagger:hilt-android:2.48.1") // Dependency injection with Dagger Hilt for Android.
+    implementation("com.google.dagger:hilt-android:2.48.1")
+    implementation(project(":core"))
     kapt("com.google.dagger:hilt-android-compiler:2.48.1") // Annotation processor for Dagger Hilt.
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0") // Hilt extension for Navigation in Compose.
     kapt("com.google.dagger:dagger-android-processor:2.48.1") // Annotation processor for Dagger Hilt.
@@ -93,7 +94,6 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-   // androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.10.01"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
@@ -102,10 +102,17 @@ dependencies {
     testImplementation("org.mockito:mockito-core:2.11.0")
     testImplementation("android.arch.core:core-testing:1.1.1")
     testImplementation("com.google.truth:truth:1.1")
-// For Robolectric tests.
     testImplementation("com.google.dagger:hilt-android-testing:2.28-alpha")
-// For instrumented tests.
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.28-alpha")
+
+    implementation("org.junit.jupiter:junit-jupiter-params:5.10.0")
+    implementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
+    implementation("com.willowtreeapps.assertk:assertk:0.27.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")
+    implementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
+    implementation("org.junit.jupiter:junit-jupiter-engine:5.10.0")
+    implementation("app.cash.turbine:turbine:1.0.0")
+    implementation("com.squareup:javapoet:1.13.0")
 
     kaptTest("com.google.dagger:hilt-android-compiler:2.40.5")
 }

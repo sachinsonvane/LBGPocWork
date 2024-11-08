@@ -7,5 +7,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface  BooksRepo {
 
-    suspend fun getAllPosts(): Flow<Either<Failure, List<BooksEntity>>>
+    suspend fun getAllBooks(): Flow<Either<Failure, List<BooksEntity>>>
 }

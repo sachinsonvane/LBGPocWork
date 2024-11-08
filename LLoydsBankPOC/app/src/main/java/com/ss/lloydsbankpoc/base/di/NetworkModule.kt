@@ -1,7 +1,7 @@
 package com.ss.lloydsbankpoc.base.di
 
-//import com.sns.base.BuildConfig
-import com.ss.lloydsbankpoc.base.constants.AppConstants
+import com.sns.core.constants.AppConstants
+import com.sns.core.constants.AppConstants.BUIL_CONFIG_DEBUG
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,11 +20,11 @@ class NetworkModule {
     @Singleton
     fun provideRetrofit():Retrofit{
         val interceptor = HttpLoggingInterceptor()
-        //if (BuildConfig.DEBUG) {
+        if (BUIL_CONFIG_DEBUG) {
             interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
-       // } else {
-       //     interceptor.setLevel(HttpLoggingInterceptor.Level.NONE)
-       // }
+       } else {
+            interceptor.setLevel(HttpLoggingInterceptor.Level.NONE)
+       }
 
         val client = OkHttpClient.Builder()
             .addInterceptor(interceptor)
