@@ -1,4 +1,4 @@
-package com.sns.core.constants
+package com.ss.lloydsbankpoc.base.constants
 
 object AppConstants {
 

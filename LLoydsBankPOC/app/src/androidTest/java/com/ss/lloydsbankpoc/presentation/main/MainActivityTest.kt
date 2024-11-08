@@ -1,6 +1,8 @@
 package com.ss.lloydsbankpoc.presentation.main
 
 
+import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.onNodeWithText
 import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.*
 import androidx.test.espresso.matcher.ViewMatchers.*
@@ -21,5 +23,7 @@ class MainActivityTest {
 
     @Test
     fun mainActivityTest() {
+       // mActivityScenarioRule.onNodeWithText("LBG Test").assertIsDisplayed()
+
     }
 }

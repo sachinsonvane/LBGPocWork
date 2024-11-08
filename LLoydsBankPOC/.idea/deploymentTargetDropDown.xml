@@ -2,10 +2,13 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="GetBooksFromServerTest">
+      <entry key="ComposeUiTest">
         <State />
       </entry>
-      <entry key="GetSpellsFromServerTest">
+      <entry key="ExampleInstrumentedTest">
+        <State />
+      </entry>
+      <entry key="GetBooksFromServerTest">
         <State />
       </entry>
       <entry key="MainActivityTest">

@@ -68,6 +68,25 @@ fun BooksScreen(navController: NavController,
                 modifier = Modifier.fillMaxSize(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                Spacer(modifier = Modifier.size(16.dp))
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+
+                    Row {
+                        Text(
+                            text = stringResource(id = R.string.logo_title),
+                            fontSize = 22.sp,
+                            color = Color("#05350B".toColorInt())
+                        )
+
+                    }
+                }
+
                  LazyColumn(
                     modifier = Modifier.fillMaxWidth(),
                     contentPadding = PaddingValues(16.dp),

@@ -56,12 +56,10 @@ android {
 dependencies {
 
     implementation("androidx.core:core-ktx:1.13.1")
+  //  implementation("androidx.core:core-ktx:1.15.0")
+   // implementation("androidx.core:core:1.15.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.activity:activity-compose:1.8.2")
-    //implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-//    implementation("androidx.core:core-ktx:1.12.0") // Kotlin extensions for Android.
-//    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2") // Kotlin extensions for lifecycle awareness.
-//    implementation("androidx.activity:activity-compose:1.8.2")
     implementation(platform("androidx.compose:compose-bom:2023.10.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
@@ -75,7 +73,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2") // Kotlin extensions for LiveData with Lifecycle.
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") // ViewModel utilities for Compose.
     implementation("com.google.dagger:hilt-android:2.48.1")
-    implementation(project(":core"))
+
     kapt("com.google.dagger:hilt-android-compiler:2.48.1") // Annotation processor for Dagger Hilt.
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0") // Hilt extension for Navigation in Compose.
     kapt("com.google.dagger:dagger-android-processor:2.48.1") // Annotation processor for Dagger Hilt.
@@ -105,13 +103,13 @@ dependencies {
     testImplementation("com.google.dagger:hilt-android-testing:2.28-alpha")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.28-alpha")
 
-    implementation("org.junit.jupiter:junit-jupiter-params:5.10.0")
-    implementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
-    implementation("com.willowtreeapps.assertk:assertk:0.27.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")
-    implementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
-    implementation("org.junit.jupiter:junit-jupiter-engine:5.10.0")
-    implementation("app.cash.turbine:turbine:1.0.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:3.2.0")
+    testImplementation("com.willowtreeapps.assertk:assertk:0.27.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.10.0")
+    testImplementation("app.cash.turbine:turbine:1.0.0")
     implementation("com.squareup:javapoet:1.13.0")
 
     kaptTest("com.google.dagger:hilt-android-compiler:2.40.5")

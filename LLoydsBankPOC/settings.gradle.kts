@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "LLoydsBankPOC"
 include(":app")
-include(":core")
