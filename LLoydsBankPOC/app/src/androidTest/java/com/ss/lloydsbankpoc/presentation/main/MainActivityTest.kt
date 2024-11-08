@@ -23,7 +23,7 @@ class MainActivityTest {
 
     @Test
     fun mainActivityTest() {
-       // mActivityScenarioRule.onNodeWithText("LBG Test").assertIsDisplayed()
+        //mActivityScenarioRule.onNodeWithText("LBG Test").assertIsDisplayed()
 
     }
 }
